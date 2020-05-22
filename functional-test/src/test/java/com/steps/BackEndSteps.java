@@ -29,7 +29,6 @@ public class BackEndSteps {
 
     @Then("^the response is (\\d+)$")
     public void getResponse(Integer code) {
-        System.out.println("The Status Code is: " + response.getStatus());
         Integer codeResponse = response.getStatus();
         Assert.assertEquals(code, codeResponse);
         System.out.println("The response is " + code);
